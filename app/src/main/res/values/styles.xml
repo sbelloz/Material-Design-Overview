@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Light Indigo -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- Dark Indigo -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Blue -->
+
+        <!-- android:textColorPrimary is the  color of the title text in the Toolbar, in the Theme.AppCompat theme:  -->
+        <!--<item name="android:textColorPrimary">@color/white</item>-->
+        <!-- android:textColorSecondary is the color of the menu overflow icon (three vertical dots) -->
+        <!--<item name="android:textColorSecondary">@color/white</item>-->
+    </style>
+
+
+</resources>
