@@ -21,6 +21,9 @@
     <string name="nav_bookmarks">Bookmarks</string>
     <string name="username">Username</string>
     <string name="detail_activity">DetailActivity</string>
+    <string name="list_fragment_title">List</string>
+    <string name="card_fragment_title">Card</string>
+    <string name="grid_fragment_title">Grid</string>
 
 
 </resources>

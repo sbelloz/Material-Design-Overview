@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
@@ -12,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import it.bellotti.android.materialdesignsample.R;
-import it.bellotti.android.materialdesignsample.ui.activity.DetailActivity;
 
 /**
  * Created with Android Studio.
@@ -21,7 +19,7 @@ import it.bellotti.android.materialdesignsample.ui.activity.DetailActivity;
  * Time: 14.12
  * App:  MaterialDesignSample
  */
-public class TileContentFragment extends Fragment {
+public class GridContentFragment extends Fragment {
 
     @Nullable
     @Override
@@ -57,7 +55,7 @@ public class TileContentFragment extends Fragment {
         static class ViewHolder extends RecyclerView.ViewHolder {
 
             public ViewHolder(LayoutInflater inflater, ViewGroup parent) {
-                super(inflater.inflate(R.layout.item_tile, parent, false));
+                super(inflater.inflate(R.layout.item_grid, parent, false));
             }
         }
     }

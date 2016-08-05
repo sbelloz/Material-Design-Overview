@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/card_height"
     android:layout_gravity="center"
-    android:layout_marginTop="@dimen/md_keylines"
     android:layout_marginBottom="@dimen/md_keylines"
     android:layout_marginLeft="@dimen/md_keylines"
     android:layout_marginRight="@dimen/md_keylines"
+    android:layout_marginTop="@dimen/md_keylines"
     android:foreground="?attr/selectableItemBackground"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
@@ -41,7 +41,7 @@
             android:layout_marginRight="@dimen/md_keylines"
             android:layout_marginTop="@dimen/md_keylines"
             android:ellipsize="end"
-            android:singleLine="true"
+            android:maxLines="1"
             android:text="@string/item_desc"
             android:textColor="@color/dark_grey"
             android:textSize="@dimen/article_subheading" />
@@ -60,14 +60,13 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="@dimen/cards_button_width"
             android:layout_height="@dimen/cards_button_height"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_below="@+id/card_text"
-            android:layout_marginRight="@dimen/md_keylines"
             android:layout_marginEnd="@dimen/md_keylines"
-            android:tint="@color/button_grey"
-            android:src="@drawable/ic_share_black_24dp"/>
-
+            android:layout_marginRight="@dimen/md_keylines"
+            android:src="@drawable/ic_share_black_24dp"
+            android:tint="@color/button_grey" />
 
 
         <ImageButton
@@ -76,12 +75,12 @@
             android:layout_width="@dimen/cards_button_width"
             android:layout_height="@dimen/cards_button_height"
             android:layout_below="@+id/card_text"
-            android:layout_marginRight="@dimen/md_keylines"
             android:layout_marginEnd="@dimen/md_keylines"
+            android:layout_marginRight="@dimen/md_keylines"
             android:layout_toLeftOf="@id/share_button"
             android:layout_toStartOf="@id/share_button"
-            android:tint="@color/button_grey"
-            android:src="@drawable/ic_favorite_black_24dp"/>
+            android:src="@drawable/ic_favorite_black_24dp"
+            android:tint="@color/button_grey" />
 
 
     </RelativeLayout>

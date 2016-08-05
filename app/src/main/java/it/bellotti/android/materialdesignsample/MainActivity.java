@@ -2,11 +2,8 @@ package it.bellotti.android.materialdesignsample;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.ColorRes;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -30,7 +27,7 @@ import java.util.List;
 
 import it.bellotti.android.materialdesignsample.ui.fragment.CardContentFragment;
 import it.bellotti.android.materialdesignsample.ui.fragment.ListContentFragment;
-import it.bellotti.android.materialdesignsample.ui.fragment.TileContentFragment;
+import it.bellotti.android.materialdesignsample.ui.fragment.GridContentFragment;
 
 
 public class MainActivity
@@ -124,9 +121,9 @@ public class MainActivity
 
     private void setupTabs(ViewPager pager, TabLayout tabs) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new ListContentFragment(), "List");
-        adapter.addFragment(new CardContentFragment(), "Card");
-        adapter.addFragment(new TileContentFragment(), "Tile");
+        adapter.addFragment(new ListContentFragment(), getString(R.string.list_fragment_title));
+        adapter.addFragment(new CardContentFragment(), getString(R.string.card_fragment_title));
+        adapter.addFragment(new GridContentFragment(), getString(R.string.grid_fragment_title));
 
         pager.setAdapter(adapter);
         tabs.setupWithViewPager(pager);
